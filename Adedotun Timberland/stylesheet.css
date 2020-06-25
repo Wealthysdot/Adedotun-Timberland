@@ -1,0 +1,284 @@
+html,
+body {
+    height: 100%;
+    font-family: lato;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 10rem;
+}
+
+.inner {
+    width: 100%;
+    max-width: 75rem;
+    height: inherit;
+}
+
+.header {
+    height: 5rem;
+    border: 1px solid #EEEEEE;
+    /*box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);*/
+}
+
+.header-inner,
+.header-inner-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .menu-list>li {
+    display: inline-block;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 0 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu_item a {
+    color: #020202;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.timberland {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    padding: 20px 60px;
+}
+
+.header-inner-right>.sign {
+    font-family: 'Lato', sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.header-inner-right>.log {
+    font-family: 'Lato', sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/*.main {
+    padding: 150%;
+}
+
+.grid-container {
+    justify-content: space-around;
+    display: flex;
+}
+
+.item {
+    position: absolute;
+    width: 515px;
+    height: 711px;
+    left: 80px;
+    top: 110px;
+    justify-content: flex-start;
+    background-color: #EEEEEE;
+    border: 50px;
+}
+
+.item img {
+    position: absolute;
+    width: 403px;
+    height: 407px;
+    left: 136px;
+    top: 262px;
+}
+
+.item-1 {
+    background-color: #EEEEEE;
+}
+
+.item-2 {
+    background-color: #EEEEEE;
+}
+
+.item-3 {
+    justify-content: flex-end;
+    background-color: #EEEEEE;
+}*/
+
+.main-row {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.imgleft {
+    width: 40%;
+    background-color: #eee;
+    height: 80vh;
+    text-align: center;
+}
+
+.imgleft>img {
+    width: 70%;
+    padding-top: 100px;
+}
+
+.imgright {
+    display: flex;
+    width: 60%;
+    margin: 0 0 0 20px;
+    flex-direction: column;
+}
+
+.imgright-top {
+    display: flex;
+    text-align: center;
+}
+
+.imgright-top__img {
+    width: 50%;
+    background-color: #eee;
+    height: 37vh;
+}
+
+.center {
+    text-align: center;
+}
+
+.imgright-top__img:nth-child(1) {
+    margin-right: 10px;
+    width: 40%;
+}
+
+.imgright-top__img:nth-child(1)>img {
+    width: 50%;
+    padding-top: 50px;
+}
+
+.imgright-top__img:nth-child(2) {
+    margin-left: 10px;
+    width: 60%;
+}
+
+.imgright-top__img:nth-child(2)>img {
+    width: 40%;
+    padding-top: 40px;
+}
+
+.imgright-bottom {
+    background-color: #eee;
+    height: 40vh;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.link {
+    text-align: left;
+    padding: 50px 0 0 10px;
+    width: 100%;
+}
+
+.imgright-top__img:nth-child(2) .link {
+    text-align: left;
+    padding: 35px 0 0 10px;
+    width: 100%;
+}
+
+.link a {
+    color: #333;
+}
+
+.link img {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.imgright-bottom>img {
+    width: 50%;
+    padding-top: 40px;
+}
+
+.imgright-bottom>img {
+    width: 50%;
+    padding-top: 40px;
+}
+
+.imgright-bottom .link {
+    padding: 15px 0 0 10px;
+}
+
+.imgleft .link {
+    position: relative;
+    top: 12%;
+}
+
+@media only screen and (device-width:1440px) {
+    .imgleft .link {
+        top: 9%;
+    }
+    .link {
+        padding: 40px 0 0 10px;
+    }
+    .imgright-top__img:nth-child(2) .link {
+        padding: 20px 0 0 10px;
+    }
+    .imgright-bottom .link {
+        padding: 0 0 0 10px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .main-row {
+        flex-direction: column;
+    }
+    .imgleft {
+        width: 100%;
+    }
+    .imgleft>img {
+        width: 50%;
+        padding-top: 50px;
+    }
+    .imgleft .link {
+        top: 4%;
+    }
+}
